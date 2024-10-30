@@ -1,0 +1,35 @@
+python -u run.py --is_training 1 --model DeformableTST --model_id ETTh1 --root_path ./all_datasets/ETT-small/ --data_path ETTh1.csv --data ETTh1 --n_vars 7 --seq_len 12 --stem_ratio 1 --pred_len 6 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 512 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id ETTh1 --root_path ./all_datasets/ETT-small/ --data_path ETTh1.csv --data ETTh1 --n_vars 7 --seq_len 24 --stem_ratio 1 --pred_len 12 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 512 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id ETTh1 --root_path ./all_datasets/ETT-small/ --data_path ETTh1.csv --data ETTh1 --n_vars 7 --seq_len 36 --stem_ratio 1 --pred_len 18 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 512 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id ETTh2 --root_path ./all_datasets/ETT-small/ --data_path ETTh2.csv --data ETTh2 --n_vars 7 --seq_len 12 --stem_ratio 1 --pred_len 6 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 512 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id ETTh2 --root_path ./all_datasets/ETT-small/ --data_path ETTh2.csv --data ETTh2 --n_vars 7 --seq_len 24 --stem_ratio 1 --pred_len 12 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 512 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id ETTh2 --root_path ./all_datasets/ETT-small/ --data_path ETTh2.csv --data ETTh2 --n_vars 7 --seq_len 36 --stem_ratio 1 --pred_len 18 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 512 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id Exchange --root_path ./all_datasets/exchange_rate/ --data_path exchange_rate.csv --data custom --n_vars 8 --seq_len 12 --stem_ratio 1 --pred_len 6 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 512 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id Exchange --root_path ./all_datasets/exchange_rate/ --data_path exchange_rate.csv --data custom --n_vars 8 --seq_len 24 --stem_ratio 1 --pred_len 12 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 512 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id Exchange --root_path ./all_datasets/exchange_rate/ --data_path exchange_rate.csv --data custom --n_vars 8 --seq_len 36 --stem_ratio 1 --pred_len 18 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 512 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id ILI --root_path ./all_datasets/illness/ --data_path national_illness.csv --data custom --n_vars 7 --seq_len 12 --stem_ratio 1 --pred_len 6 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 32 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id ILI --root_path ./all_datasets/illness/ --data_path national_illness.csv --data custom --n_vars 7 --seq_len 24 --stem_ratio 1 --pred_len 12 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 32 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --model DeformableTST --model_id ILI --root_path ./all_datasets/illness/ --data_path national_illness.csv --data custom --n_vars 7 --seq_len 36 --stem_ratio 1 --pred_len 18 --depths 6 --stage_spec DDDDDD --dims 256 --expansion 4 --batch_size 32 --learning_rate 0.0005 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --task_name short_term_forecast --model DeformableTST --model_id M4_Yearly --root_path ./all_datasets/m4/ --seasonal_patterns Yearly --data m4 --n_vars 1 --loss SMAPE --stem_ratio 1 --depths 4 --stage_spec DDDD --dims 128 --expansion 8 --batch_size 32 --learning_rate 0.001 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --task_name short_term_forecast --model DeformableTST --model_id M4_Quarterly --root_path ./all_datasets/m4/ --seasonal_patterns Quarterly --data m4 --n_vars 1 --loss SMAPE --stem_ratio 1 --depths 4 --stage_spec DDDD --dims 128 --expansion 8 --batch_size 32 --learning_rate 0.001 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --task_name short_term_forecast --model DeformableTST --model_id M4_Monthly --root_path ./all_datasets/m4/ --seasonal_patterns Monthly --data m4 --n_vars 1 --loss SMAPE --stem_ratio 1 --depths 4 --stage_spec DDDD --dims 128 --expansion 8 --batch_size 32 --learning_rate 0.001 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --task_name short_term_forecast --model DeformableTST --model_id M4_Weekly --root_path ./all_datasets/m4/ --seasonal_patterns Weekly --data m4 --n_vars 1 --loss SMAPE --stem_ratio 1 --depths 4 --stage_spec DDDD --dims 128 --expansion 8 --batch_size 32 --learning_rate 0.001 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --task_name short_term_forecast --model DeformableTST --model_id M4_Daily --root_path ./all_datasets/m4/ --seasonal_patterns Daily --data m4 --n_vars 1 --loss SMAPE --stem_ratio 1 --depths 4 --stage_spec DDDD --dims 128 --expansion 8 --batch_size 32 --learning_rate 0.001 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
+
+python -u run.py --is_training 1 --task_name short_term_forecast --model DeformableTST --model_id M4_Hourly --root_path ./all_datasets/m4/ --seasonal_patterns Hourly --data m4 --n_vars 1 --loss SMAPE --stem_ratio 1 --depths 4 --stage_spec DDDD --dims 128 --expansion 8 --batch_size 32 --learning_rate 0.001 --train_epochs 50 --warmup_epochs 5 --optimizer Adam --weight_decay 0.05 --lradj cos
